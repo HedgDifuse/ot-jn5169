@@ -1,0 +1,22 @@
+# Build output
+/build/
+/build-posix*/
+*.log
+
+# Backups & scratch files from bring-up
+*.bak
+*.bak-*
+src/*.bak*
+
+# Proprietary NXP JN516x SDK — download JN-SW-4163 from nxp.com, do not commit
+/third_party/nxp/JN-SW-4163/
+
+# External BA2 toolchain — build from github.com/GravisZro/BA2-toolchain into ~/ba2
+/BA2-toolchain/
+
+# Host-side otbr was only used during bring-up; not part of the RCP firmware
+/ot-br-posix/
+
+# Editor / OS
+.DS_Store
+*.swp
